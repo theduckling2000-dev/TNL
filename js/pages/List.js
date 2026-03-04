@@ -54,6 +54,10 @@ export default {
                             <div class="type-title-sm">Password</div>
                             <p>{{ level.password || 'Free to Copy' }}</p>
                         </li>
+                         <li>
+                            <div class="type-title-sm">HandCam</div>
+                            <p>{{ level.HandCam || 'Optional' }}</p>
+                         </li>
                     </ul>
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
@@ -121,7 +125,10 @@ export default {
                         Do not use easy modes, only a record of the unmodified level qualifies
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Once a level falls onto the Legacy List, i accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                    </p>
+                     <p>
+                       CBF is allowed but is not required and is completly optional
                     </p>
                 </div>
             </div>
